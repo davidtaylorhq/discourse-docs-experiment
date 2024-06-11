@@ -17,8 +17,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "discourse", // Usually your GitHub org/user name.
-  projectName: "discourse", // Usually your repo name.
+  organizationName: "davidtaylorhq", // Usually your GitHub org/user name.
+  projectName: "discourse-docs-experiment", // Usually your repo name.
 
   presets: [
     [
