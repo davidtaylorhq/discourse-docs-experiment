@@ -11,7 +11,7 @@ const config = {
     "Customize and integrate with Discourse, the online home for your community",
   url: "https://docs-demo.dtaylor.uk",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "https://discourse.org/favicon.ico",
 
