@@ -1,0 +1,8 @@
+{
+  "label": "Frontend",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "These systems can be used in both themes and plugins to customize the frontend of Discourse"
+  }
+}
