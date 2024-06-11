@@ -88,9 +88,10 @@
   color: var(--ifm-color-primary-contrast-foreground)
 }
 
-.cta-grid{
+.cta-grid {
   background-color: var(--ifm-color-primary-contrast-background);
-  a {
-    color: inherit;
-  }
+}
+
+.cta-grid a {
+  color: inherit;
 }
