@@ -81,7 +81,7 @@ const config = {
             to: "/docs/rest-api/discourse-api-documentation",
           },
           {
-            href: "https://github.com/discourse/docusaurus",
+            href: "https://github.com/discourse/discourse",
             label: "GitHub",
             position: "right",
           },
@@ -111,16 +111,12 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                label: "Meta",
+                href: "https://meta.discourse.org",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/discourse",
               },
             ],
           },
@@ -128,12 +124,16 @@ const config = {
             title: "More",
             items: [
               {
+                label: "discourse.org",
+                to: "https://discourse.org",
+              },
+              {
                 label: "Blog",
-                to: "/blog",
+                to: "https://blog.discourse.org",
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/discourse/discourse",
               },
             ],
           },
