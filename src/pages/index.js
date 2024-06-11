@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description="Customize and integrate with Discourse, the online home for your community"
     >
       <HomepageHeader />
       <main>
