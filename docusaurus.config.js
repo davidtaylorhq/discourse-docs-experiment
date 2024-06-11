@@ -9,7 +9,7 @@ const config = {
   title: "Discourse Developer Docs",
   tagline:
     "Customize and integrate with Discourse, the online home for your community",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://docs-demo.dtaylor.uk",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
