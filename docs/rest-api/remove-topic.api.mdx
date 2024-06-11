@@ -1,0 +1,43 @@
+---
+id: remove-topic
+title: "Remove a topic"
+description: "Remove a topic"
+sidebar_label: "Remove a topic"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVm1v2zYQ/iuE+mUD/CKnjmN76ICsTddsaRokLjCgKiaaPFlcJVIjKTtGkP++O0py5GTbpwFLAzQieXfPPffckQ+R5xsXLb9EK1Mp4aKvg8hUYLlXRl/KaBlZKM0Wwm40iCpueQkeLNk8RBo/8Mx5pYa/wh73lcbPHLgEi18W/qyVBXTjbQ2DyIkcSh4tHyK/r8jQeav0Jnp8HBz5+uzAhs//wqGSnZuK+zz6F6Pn/h+/0oqrjHbg6PxJHNN/EpywqiKKyLoCoTIlWGWcdxT62YHbwCDjzLckIoG5IW4lFMhloBWRLaOxHz8o+Tj6w6EhAgW77ZiubUFEeF+55Xj8ICHjdeE/YMhHPLnlVvF10aDs7fU+KZxywtTWwQjueVkVMBKmRMCUp9KZCZQoXxAn77qz7Pzmkr0zoi5B+yALioewmuQK7gHjPM95lSvHKr4BJgyaKe2Yz4HJvh+Gv7nZIS2sxjhPEX1uTb3JQ2TBi8KNEp3oH9m18bBk741lXO8ZaFkZpb1j2nhWKOdBsr2p0USzzBQFuc4h0V8sEF5Ai43SADZAOUrw63cds1gbPnoiytgNFmU4PolPz2bfJ3pTKwmEOFOb2gIzte/ngJEJdAct4H716hW7RV0hTewtkoHpD1coPNpbIZD+GuK27ObT3Qo9SXbzecVsY+lCVmtgDjwFS3lVFUoEHsf3w91uN0TTcogyAS2MBJkOEp2WWHiFPevHYVdyz9MBwxhH9iS39ID1ogXPrrF/XABy2zbBC/wfUWNHGWPRrdkGjjA1hx6CANCG8SABZdmH1ccrXK1x2RI2Nwo1bTWZaLL8fHvF0jHig42xClzKQjMgnFBpZjL2tDkIwfrHQwelAVmLxzVaCIhI67ZsNKg0++Xu0zVrVgIJlxqlxCXFcJgXjobg6FAJov9lLFJeyfeMF84EOwpYPj+cJpoI5VKSVtJzIaDyS/aiGqwZeWROubWx6XNDAsClgLqbToj7roV6gLlTPm+IaaIcfGJnahDgHLd7prKAfMe170SM3LuEKEJf1N6yV10LvrYal9b74BuJGTBXi5zKi/2udEMr+RgFfbcOGbfwZE3YqHUCvJbAykKm7hmyR4CwTyUBIqboVIcd62Nsy0xHhTDWgvAHNvrFJEWf13hK+5ZgWr0zJfSykibMkHb6h+nCj2wGhM77PStDqnrvc+IaCgy2U0WR6M6WsCM07NSeB5ABy4rWBYU+2msKgF4OSQsLuNFNE7xZWWZNGXLlskTJVlxDEXx+0qIJmvNt+MMebLpZWHHnmPIkdV4YhB2UcTjaXbaoTOp2bM/VTUd3ob5RJyu3pFhpivIVOGLY8Df288WKJeFCwqk5OTkbxfhvsnwdx/E4gByjlqwbU7uOufBqC6HQScSSJNHDD2jdvhuW7GwyPT09EbPJdA6T2eSMA1+fnsxkPItnk/l0vZjyeQwins4zES/mi2mWTfjZyfpsGovTbLJ47rTLacncHpu5TKIWfdN+lBG1AU3uMG17TYNlKIz59jLhcPCfMn7q8D6U/rhcsr8Zxj/8T2w0++9xn9bfzBfz09fiJB5Op/FiCIsJH/I58GE2EzLLFjOOP30jYQpj30wXcgGL/rqHe/97s5nFmchkj3dqxJ+MKQAltuUF0h1mbUaS6zqR8TCpaMqv26N05dFFi13RPLT2JGUeLgKzAyu4Q+Wm9FxLw8WW4QDGP0MIVmt8E4UHAjaWwf6xOxWmJT5YcOACDgt69LQvxY+XK1w/fmnhi8U9ew9cXb69uL67GPl7T4+nvwBsiOem
+sidebar_class_name: "delete api-method"
+info_path: docs/rest-api/discourse-api-documentation
+custom_edit_url: null
+hide_send_button: true
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Remove a topic</h1>
+
+<MethodEndpoint method={"delete"} path={"/t/{id}.json"}></MethodEndpoint>
+
+
+
+Remove a topic
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"id","in":"path","schema":{"type":"string"},"required":true}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Header Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"Api-Key","in":"header","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"Api-Username","in":"header","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+specific posts
+
+</div><div></div></TabItem></ApiTabs></div></div>
+      
