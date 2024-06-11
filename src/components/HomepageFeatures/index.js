@@ -6,7 +6,7 @@ const FeatureList = [
   {
     title: "Guides",
     svg: "/img/discourse/Spot1.svg",
-    href: "/docs/guides",
+    href: "/docs/guides/intro",
     description: (
       <>
         Structured tutorials and how-tos for core, theme and plugin development.
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: "API Reference",
-    href: "/docs/reference",
+    href: "/docs/reference/intro",
     svg: "/img/discourse/BlankSlate1.svg",
     description: (
       <>
