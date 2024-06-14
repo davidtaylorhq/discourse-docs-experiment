@@ -55,3 +55,19 @@ If no `expected` value is provided, the assertion will fail if the
 ```javascript
 assert.form(".my-form").field("foo").hasValue("bar", "user has set the value");
 ```
+
+### isDisabled
+
+Assert that the `field` is disabled.
+
+#### Parameters
+
+|           | type     | required |
+| --------- | -------- | -------- |
+| `message` | `string` | `false`  |
+
+#### Examples
+
+```javascript
+assert.form(".my-form").field("foo").isDisabled("bar", "the field is disabled");
+```
