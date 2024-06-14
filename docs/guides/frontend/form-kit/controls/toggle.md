@@ -1,6 +1,6 @@
-# Select
+# Toggle
 
-Renders a `<select>` element.
+Renders an `<DToggleSwitch />` component.
 
 | property       | type     | default | required | description                              |
 | -------------- | -------- | ------- | -------- | ---------------------------------------- |
@@ -12,12 +12,8 @@ Renders a `<select>` element.
 
 ```hbs
 <Form as |form|>
-  <form.Field @name="fruits" as |field|>
-    <field.Select as |select|>
-      <select.Option @value="1">Mango</select.Option>
-      <select.Option @value="2">Apple</select.Option>
-      <select.Option @value="3">Coconut</select.Option>
-    </field.Select>
+  <form.Field @name="allowed" as |field|>
+    <field.Toggle />
   </form.Field>
 </Form>
 ```

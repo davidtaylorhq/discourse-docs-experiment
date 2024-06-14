@@ -1,6 +1,6 @@
 # Image
 
-Renders an `<UppyImageUploader>` component.
+Renders an `<UppyImageUploader />` component.
 
 | property       | type     | default | required | description                              |
 | -------------- | -------- | ------- | -------- | ---------------------------------------- |
