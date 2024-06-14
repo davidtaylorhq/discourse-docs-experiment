@@ -1,0 +1,8 @@
+{
+  "label": "FormKit",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "The form library for Discourse"
+  }
+}
