@@ -2,6 +2,12 @@
 
 Renders an `<UppyImageUploader>` component.
 
+| property       | type     | default | required | description                              |
+| -------------- | -------- | ------- | -------- | ---------------------------------------- |
+| `@title`       | `string` | `null`  | `false`  | displays a title above the control       |
+| `@subtitle`    | `string` | `null`  | `false`  | displays a subtitle above the control    |
+| `@description` | `string` | `null`  | `false`  | displays a description under the control |
+
 ## Upload handling
 
 By default the component will set an upload object. It's common to only want the URL and the ID of the upload.

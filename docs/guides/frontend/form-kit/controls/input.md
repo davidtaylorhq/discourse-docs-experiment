@@ -1,17 +1,46 @@
-# Text
+# Input
 
-Renders a `<textarea>` element.
+Renders an `<input>` element.
 
-| property  | type      | default | required | description                     |
-| --------- | --------- | ------- | -------- | ------------------------------- |
-| `@height` | `integer` | `200`   | `false`  | sets the height of the textarea |
+| property       | type     | default | required | description                              |
+| -------------- | -------- | ------- | -------- | ---------------------------------------- |
+| `@type`        | `string` | `text`  | `false`  | type of the input element                |
+| `@title`       | `string` | `null`  | `false`  | displays a title above the control       |
+| `@subtitle`    | `string` | `null`  | `false`  | displays a subtitle above the control    |
+| `@description` | `string` | `null`  | `false`  | displays a description under the control |
+
+## Allowed types
+
+- `color`
+- `date`
+- `datetime-local`
+- `email`
+- `hidden`
+- `month`
+- `number`
+- `password`
+- `range`
+- `search`
+- `tel`
+- `text`
+- `time`
+- `url`
+- `week`
+
+## Special cases
+
+- `file` is supported only for images through [`<field.Image />`](./image)
 
 ## Example
 
-```hbs preview-template
+```hbs
 <Form as |form|>
-  <form.Field @name="description" as |field|>
-    <field.Text @height={{120}} />
+  <form.Field @name="email" as |field|>
+    <field.Input />
+  </form.Field>
+
+  <form.Field @name="age" @type="number" as |field|>
+    <field.Input />
   </form.Field>
 </Form>
 ```
