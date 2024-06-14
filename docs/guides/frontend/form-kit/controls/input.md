@@ -1,39 +1,17 @@
-# Input
+# Text
 
-Renders an `<input>` element.
+Renders a `<textarea>` element.
 
-| property | default | description               |
-| -------- | ------- | ------------------------- |
-| @type    | text    | type of the input element |
-
-## Allowed types
-
-- color
-- date
-- datetime-local
-- email
-- hidden
-- month
-- number
-- password
-- range
-- search
-- tel
-- text
-- time
-- url
-- week
+| property  | type      | default | required | description                     |
+| --------- | --------- | ------- | -------- | ------------------------------- |
+| `@height` | `integer` | `200`   | `false`  | sets the height of the textarea |
 
 ## Example
 
 ```hbs preview-template
 <Form as |form|>
-  <form.Field @name="email" as |field|>
-    <field.Input />
-  </form.Field>
-
-  <form.Field @name="age" @type="number" as |field|>
-    <field.Input />
+  <form.Field @name="description" as |field|>
+    <field.Text @height={{120}} />
   </form.Field>
 </Form>
 ```
