@@ -2,7 +2,7 @@
 
 FormKit exposes only a single component as its public API, `<Form>`. All its other ingredients are yielded, as contextual components, modifiers or plain data.
 
-Every form is composed of one or multiple [field](./field), representing the value, validation and metadata of a control. Each field encapsulates a control which represents the form element that the user will interact with to enter the data, like a [input](./controls/input) or [select](./controls/select). Other utilities, like `<form.Submit />` or `<form.Alert />` are also provided.
+Every form is composed of one or multiple [field](./field), representing the value, validation and metadata of a control. Each field encapsulates a control which represents the form element that the user will interact with to enter the data, like an [input](./controls/input) or [select](./controls/select). Other utilities, like [submit](./submit) or [alert](./alert) are also provided.
 
 These pieces make up the most basic example of a form:
 
