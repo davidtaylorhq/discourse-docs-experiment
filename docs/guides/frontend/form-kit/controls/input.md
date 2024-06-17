@@ -2,12 +2,9 @@
 
 Renders an `<input>` element.
 
-| property       | type     | default | required | description                              |
-| -------------- | -------- | ------- | -------- | ---------------------------------------- |
-| `@type`        | `string` | `text`  | `false`  | type of the input element                |
-| `@title`       | `string` | `null`  | `false`  | displays a title above the control       |
-| `@subtitle`    | `string` | `null`  | `false`  | displays a subtitle above the control    |
-| `@description` | `string` | `null`  | `false`  | displays a description under the control |
+| property | type                  | default | required | description               |
+| -------- | --------------------- | ------- | -------- | ------------------------- |
+| `@type`  | ` string``undefined ` | `text`  | `false`  | type of the input element |
 
 ## Allowed types
 
@@ -29,9 +26,10 @@ Renders an `<input>` element.
 
 ## Special cases
 
-- `file` is supported only for images through [`<field.Image />`](./image)
+- `file` is supported only for images through [checkbox](./image)
+- [checkbox](./checkbox)
 
-## Example
+## Examples
 
 ```hbs
 <Form as |form|>
