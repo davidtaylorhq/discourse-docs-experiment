@@ -86,15 +86,18 @@ Callback called when the form is inserted. It allows the developer to interact w
 
 #### Arguments
 
-- `arg1` (Function): The callback function.
+- {Object} callback - The object containing callback functions.
+- {Function} callback.submit - The function to submit the form.
+- {Function} callback.reset - The function to reset the form.
+- {Function} callback.set - The function to set a key/value on the form data object.
 
 #### Examples
 
 ```javascript
 registerAPI({ submit, reset, set }) {
-  submit(); // Allows to submit the form, useful when you have a button outside the form
-  reset(); // Allows to reset the form, useful when you have a button outside the form
-  set("foo", 1) // Allows to set a key/value on the form data object
+  submit();
+  reset();
+  set("foo", 1);
 }
 ```
 
