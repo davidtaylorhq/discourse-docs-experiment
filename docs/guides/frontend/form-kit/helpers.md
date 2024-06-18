@@ -8,11 +8,30 @@ Helpers are yielded by some blocks, like [Form](./form) or be given as parameter
 
 ### Arguments
 
-- `key` (string): The name of the field to set, can also be an arbitrary key.
-- `value` (anything): The value to be set.
+- {string} key - The key for which the value is to be set.
+- {number} value - The value to be set for the given key.
 
 ### Examples
 
 ```javascript
 set("foo", 1);
+```
+
+## addError
+
+### Arguments
+
+- {Object} error - The error object containing details about the error.
+- {string} error.type - The type of the error.
+- {number} error.value - The error value.
+- {string} error.message - The error message.
+
+### Examples
+
+```javascript
+addError({
+  type: "wrong_thing",
+  value: 1,
+  message: "This should be another thing.",
+});
 ```

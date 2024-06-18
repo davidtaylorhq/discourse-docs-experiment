@@ -19,9 +19,13 @@ The Form component will yield a form object which contains the following propert
 - InputGroup
 - [set](./helpers#set)
 
+#### Examples
+
 ```hbs
 <Form as |form|>
-  {{log form}}
+  <form.Row as |row|>
+    <!-- ... -->
+  </form.Row>
 </Form>
 ```
 
@@ -63,7 +67,7 @@ Initial state of the data you give to the form.
 
 #### Arguments
 
-- `arg1` (Object): The initial data, can be anything that will work with set/get.
+- {Object} data - The data object passed to the template.
 
 #### Examples
 
@@ -104,12 +108,12 @@ Callback called when the form is submitted **and valid**.
 
 #### Arguments
 
-- `arg1` (Function): The callback function.
+- {Object} data - The object containing the form data.
 
 #### Examples
 
 ```javascript
-handleSubmit({username, age}) {
+handleSubmit({ username, age }) {
   console.log(username, age);
 }
 ```
