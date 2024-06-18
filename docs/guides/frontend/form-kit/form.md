@@ -17,7 +17,7 @@ The Form component will yield a form object which contains the following propert
 - [Submit](./submit)
 - [Field](./field)
 - InputGroup
-- [set](#the-set-helper)
+- [set](./helpers#set)
 
 ```hbs
 <Form as |form|>
@@ -30,7 +30,7 @@ The Form component will yield a form object which contains the following propert
 Transient data represents the state of the data at a given time as it's represented in the form, and not yet propagated to the `@data`.
 
 :::tip
-This is useful if you for example when you want to have conditionals in your form based on other fields.
+This is useful if you want to have conditionals in your form based on other fields.
 :::
 
 #### Examples
@@ -123,14 +123,4 @@ handleSubmit({username, age}) {
     <field.Input @type="number" />
   </form.Field>
 </Form>
-```
-
-### The `set` helper
-
-`set` allows to set any key/value on the form’s data.
-
-#### Examples
-
-```javascript
-set("foo", 1);
 ```
