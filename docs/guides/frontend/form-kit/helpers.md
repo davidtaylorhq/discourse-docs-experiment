@@ -23,7 +23,7 @@ set("foo", 1);
 
 - {Object} error - The error object containing details about the error.
 - {string} error.type - The type of the error.
-- {number} error.value - The error value.
+- {number} error.value - The invalid value.
 - {string} error.message - The error message.
 
 ### Examples
