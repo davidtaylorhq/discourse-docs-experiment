@@ -1,25 +1,25 @@
 # Controls
 
-Controls as we use the term here refer to the UI widgets that allow a user to enter data. In its most basic form that would be a `<field.Input />`.
+Controls as we use the term here refer to the UI widgets that allow a user to enter data. In its most basic form that would be an [input](./input).
 
-Each control accepts the following properties:
+:::tip
 
-| property       | type                 | default     | required | description                              |
-| -------------- | -------------------- | ----------- | -------- | ---------------------------------------- |
-| `@title`       | `string` `undefined` | `undefined` | `false`  | displays a title above the control       |
-| `@subtitle`    | `string` `undefined` | `undefined` | `false`  | displays a subtitle above the control    |
-| `@description` | `string` `undefined` | `undefined` | `false`  | displays a description under the control |
+You can pass down HTML attributes to the underlying control.
+
+:::
 
 ## Examples
 
 ```hbs
 <Form as |form|>
-  <form.Field @name="query" as |field|>
-    <field.Code
-      @title="Query"
-      @subtitle="The query to list users"
-      @description="You should make sure the query doesn’t include bots."
-    />
+  <form.Field
+    @name="query"
+    @title="Query"
+    @subtitle="The query to list users"
+    @description="You should make sure the query doesn’t include bots."
+    as |field|
+  >
+    <field.Input placeholder="Foo" />
   </form.Field>
 </Form>
 ```

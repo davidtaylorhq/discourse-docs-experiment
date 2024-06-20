@@ -2,9 +2,9 @@
 
 Renders a `<textarea>` element.
 
-| property  | type                  | default | required | description                     |
-| --------- | --------------------- | ------- | -------- | ------------------------------- |
-| `@height` | `integer` `undefined` | `200`   | `false`  | sets the height of the textarea |
+## @height
+
+Sets the height of the textarea.
 
 ## Examples
 

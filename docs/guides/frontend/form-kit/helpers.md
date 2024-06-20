@@ -4,12 +4,12 @@ Helpers are yielded by some blocks, like [Form](./form) or be given as parameter
 
 ## set
 
-`set` allows to set any key/value on the form’s data.
+`set` allows to set any name/value on the form’s data.
 
 ### Arguments
 
-- {string} key - The key for which the value is to be set.
-- {number} value - The value to be set for the given key.
+- {string} name - The name of the field for which the value is to be set.
+- {number} value - The value to be set.
 
 ### Examples
 
@@ -21,17 +21,11 @@ set("foo", 1);
 
 ### Arguments
 
-- {Object} error - The error object containing details about the error.
-- {string} error.type - The type of the error.
-- {number} error.value - The invalid value.
-- {string} error.message - The error message.
+- {string} name - The name of the invalid field.
+- {string} message - The error message.
 
 ### Examples
 
 ```javascript
-addError({
-  type: "wrong_thing",
-  value: 1,
-  message: "This should be another thing.",
-});
+addError("foo", "This should be another thing.");
 ```

@@ -6,17 +6,13 @@
 
 The Form component will yield a form object which contains the following properties:
 
-- Row
-- Section
-- ConditionalContent
-- Errors
-- Container
-- Actions
-- Button
+- [Row](./layout#row-and-col)
+- [Section](./layout#section)
+- [Container](./layout#container)
+- [Actions](./layout#actions)
 - [Alert](./alert)
 - [Submit](./submit)
 - [Field](./field)
-- InputGroup
 - [set](./helpers#set)
 
 #### Examples

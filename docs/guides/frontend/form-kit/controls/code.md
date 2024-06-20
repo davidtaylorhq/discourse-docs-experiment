@@ -2,10 +2,13 @@
 
 Renders an `<AceEditor />` component.
 
-| property  | type                  | default     | required | description                          |
-| --------- | --------------------- | ----------- | -------- | ------------------------------------ |
-| `@height` | `integer` `undefined` | `200`       | `false`  | sets the height of the code editor   |
-| `@lang`   | `string` `undefined`  | `undefined` | `false`  | sets the language of the code editor |
+## @height
+
+Sets the height of the editor.
+
+## @lang
+
+Sets the language of the editor.
 
 ## Examples
 

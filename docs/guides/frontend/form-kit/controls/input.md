@@ -2,9 +2,9 @@
 
 Renders an `<input>` element.
 
-| property | type                  | default | required | description               |
-| -------- | --------------------- | ------- | -------- | ------------------------- |
-| `@type`  | ` string``undefined ` | `text`  | `false`  | type of the input element |
+## @type
+
+Optional property which will default to `text`. Maps to `<input>` types.
 
 ## Allowed types
 

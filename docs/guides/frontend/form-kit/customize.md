@@ -30,9 +30,9 @@ Every components of FormKit will propagate attributes, which allows you to set c
 </Form>
 ```
 
-## Custom input
+## Custom control
 
-Creating a custom input is made simple by what is yieled by form and field:
+Creating a custom control is made simple by what is yieled by form and field:
 
 ```hbs
 <Form as |form|>
