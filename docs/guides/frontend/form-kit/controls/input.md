@@ -29,7 +29,7 @@ Optional property which will default to `text`. Maps to `<input>` types.
 - `file` is supported only for images through [checkbox](./image)
 - [checkbox](./checkbox)
 
-## Examples
+**Examples**
 
 ```hbs
 <Form as |form|>

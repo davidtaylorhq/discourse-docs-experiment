@@ -8,6 +8,8 @@ The FormKit page object component is available to help you write system specs fo
 | ------------------ | ---------------------------------- | -------- |
 | `node or selector` | `string` `Capybara::Node::Element` | `true`   |
 
+- {string|Capybara::Node::Element} target - The selector or node of the form.
+
 **Examples**
 
 ```ruby
@@ -20,9 +22,7 @@ The field helper allows you to interact with a specific field of a form.
 
 **Parameters**
 
-|        | type     | required |
-| ------ | -------- | -------- |
-| `name` | `string` | `true`   |
+- {string} name - The name of the field.
 
 **Examples**
 

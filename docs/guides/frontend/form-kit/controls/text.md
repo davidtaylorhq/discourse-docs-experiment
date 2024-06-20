@@ -6,7 +6,7 @@ Renders a `<textarea>` element.
 
 Sets the height of the textarea.
 
-## Examples
+**Examples**
 
 ```hbs
 <Form as |form|>

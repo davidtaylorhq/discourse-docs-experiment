@@ -2,7 +2,7 @@
 
 Renders an `<input type="checkbox">` element.
 
-## Examples
+**Examples**
 
 ```hbs
 <Form as |form|>

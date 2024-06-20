@@ -4,7 +4,7 @@
 
 [Field](./field) accept a `@validate` property which allows to define a callback function to validate the field. [Read more about addError](./helpers#add-error).
 
-#### Arguments
+**Parameters**
 
 - {string} name - The name of the form field being validated.
 - {string} value - The value of the form field being validated.
@@ -12,7 +12,7 @@
 - {Object} handlers - An object containing handler functions.
 - {Function} handlers.addError - A function to add an error if validation fails.
 
-#### Examples
+**Examples**
 
 ```javascript
 validateUsername(name, value, data, { addError }) {
@@ -30,7 +30,7 @@ validateUsername(name, value, data, { addError }) {
 
 [Form](./form) accept a `@validate` property which allows to define a callback function to validate the form. This will be called for each field of the form.
 
-#### Arguments
+**Parameters**
 
 - {string} name - The name of the form field being validated.
 - {string} value - The value of the form field being validated.
@@ -38,7 +38,7 @@ validateUsername(name, value, data, { addError }) {
 - {Object} handlers - An object containing handler functions.
 - {Function} handlers.addError - A function to add an error if validation fails.
 
-#### Examples
+**Examples**
 
 ```javascript
 validateForm(data, { addError }) {

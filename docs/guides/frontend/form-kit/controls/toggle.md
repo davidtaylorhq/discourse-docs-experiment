@@ -2,7 +2,7 @@
 
 Renders an `<DToggleSwitch />` component.
 
-## Examples
+**Examples**
 
 ```hbs
 <Form as |form|>

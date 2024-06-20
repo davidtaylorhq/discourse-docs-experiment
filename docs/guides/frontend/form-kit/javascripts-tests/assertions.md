@@ -6,17 +6,13 @@ The form element assertions are available at `assert.form(...).*`:
 
 **Parameters**
 
-|          | type                   | required |
-| -------- | ---------------------- | -------- |
-| `target` | `string` `HTMLElement` | `true`   |
+- {string|HTMLElement} target - The form element or selector.
 
 ### hasErrors()
 
 **Parameters**
 
-|           | type     | required |
-| --------- | -------- | -------- |
-| `message` | `string` | `false`  |
+- {string} message - The description of the test.
 
 **Examples**
 
@@ -30,9 +26,13 @@ The field element assertions are available at `assert.form(...).field(...).*`:
 
 **Parameters**
 
-|          | type                   | required |
-| -------- | ---------------------- | -------- |
-| `target` | `string` `HTMLElement` | `true`   |
+- {string} name - The name of the field.
+
+**Examples**
+
+```javascript
+assert.form(".my-form").field("foo");
+```
 
 ### hasValue()
 
@@ -43,10 +43,8 @@ If no `expected` value is provided, the assertion will fail if the
 
 **Parameters**
 
-|            | type               | required |
-| ---------- | ------------------ | -------- |
-| `expected` | `string` `integer` | `false`  |
-| `message`  | `string`           | `false`  |
+- {anything} expected - The expected value.
+- {string} [message] - The description of the test.
 
 **Examples**
 
@@ -60,9 +58,7 @@ Assert that the `field` is disabled.
 
 **Parameters**
 
-|           | type     | required |
-| --------- | -------- | -------- |
-| `message` | `string` | `false`  |
+- {string} [message] - The description of the test.
 
 **Examples**
 

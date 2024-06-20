@@ -24,9 +24,7 @@ test("fill in input", async function (assert) {
 
 **Parameters**
 
-|        | type     | required |
-| ------ | -------- | -------- |
-| `name` | `string` | `true`   |
+- {string} name - The name of the field.
 
 ### fillIn()
 
@@ -34,9 +32,7 @@ Can be used on [`<field.Input @type="text" />`](/docs/guides/frontend/form-kit/c
 
 **Parameters**
 
-|         | type                 | required |
-| ------- | -------------------- | -------- |
-| `value` | `string` `undefined` | `true`   |
+- {string|integer|undefined} [value] - The value to set on the input.
 
 **Examples**
 

@@ -2,15 +2,26 @@
 
 Displays an alert in the form.
 
-| property | type     | default | required | description                                                                |
-| -------- | -------- | ------- | -------- | -------------------------------------------------------------------------- |
-| `@icon`  | `string` | `null`  | `false`  | an icon to use in the alert                                                |
-| `@type`  | `string` | `info`  | `false`  | the style of the alert (allowed: `success`, `error`, `warning` and `info`) |
+## @icon
 
-## Example
+An optional icon to use in the alert.
+
+**Examples**
 
 ```hbs
-<form.Alert @icon="info-circle" @type="warning">
+<form.Alert @icon="info-circle">
+  Foo
+</form.Alert>
+```
+
+## @type
+
+An optional icon to use in the alert. Allowed types: `success`, `error`, `warning` or `info`.
+
+**Examples**
+
+```hbs
+<form.Alert @type="warning">
   Foo
 </form.Alert>
 ```

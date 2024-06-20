@@ -4,7 +4,7 @@
 
 A field must have a unique name. This name is used to set the value on the data object, and is also used for validation.
 
-### Examples
+**Examples**
 
 ```hbs
 <form.Field @name="foo" />
@@ -14,7 +14,7 @@ A field must have a unique name. This name is used to set the value on the data 
 
 A field must have a title, it will be displayed over the control and is also used in validation.
 
-### Examples
+**Examples**
 
 ```hbs
 <form.Field @title="Foo" />
@@ -24,7 +24,7 @@ A field must have a title, it will be displayed over the control and is also use
 
 The subtitle is optional and will be shown under the title when set.
 
-### Examples
+**Examples**
 
 ```hbs
 <form.Field @subtitle="Bar" />
@@ -34,7 +34,7 @@ The subtitle is optional and will be shown under the title when set.
 
 By default the title will be shown on top of the control, you can decide to not render it by setting this property to `false`.
 
-### Examples
+**Examples**
 
 ```hbs
 <form.Field @showTitle={{false}} />
@@ -44,7 +44,7 @@ By default the title will be shown on top of the control, you can decide to not 
 
 A field can be disabled to prevent any change to it.
 
-### Examples
+**Examples**
 
 ```hbs
 <form.Field @diasbled={{true}} />
@@ -62,7 +62,7 @@ Read the dedicated [documentation about @validate](./custom-validation).
 
 By default when changing the value of a field, this value will be set on the form internal data object. You can however decide to get full controll of this for a field.
 
-### Examples
+**Examples**
 
 ```javascript
 @action

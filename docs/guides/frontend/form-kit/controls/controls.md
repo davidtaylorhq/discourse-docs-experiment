@@ -8,7 +8,7 @@ You can pass down HTML attributes to the underlying control.
 
 :::
 
-## Examples
+**Examples**
 
 ```hbs
 <Form as |form|>

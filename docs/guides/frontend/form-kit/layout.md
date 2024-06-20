@@ -8,7 +8,7 @@ If you need more control, we provide few helpers: `Row`, `Col`, `Section`, `Cont
 
 Row and Col allows you to have the advantages of a simple grid system (12 columns) in your form.
 
-### Examples
+**Examples**
 
 ```hbs
 <Form as |form|>
@@ -48,7 +48,7 @@ The following CSS variables are also provided to change these defaults:
 
 A simple way to create a section with or without a title.
 
-### Examples
+**Examples**
 
 ```hbs
 <Form as |form|>
@@ -62,7 +62,7 @@ A simple way to create a section with or without a title.
 
 Allows to render a block similar to a [field](./field) without having to tie it to a specific data. It's very useful for [custom controls](./customize#custom-control) for example
 
-### Examples
+**Examples**
 
 ```hbs
 <Form as |form|>
@@ -76,7 +76,7 @@ Allows to render a block similar to a [field](./field) without having to tie it 
 
 Actions is a custom Container to wrap your buttons in the footer of your form, most likely.
 
-### Examples
+**Examples**
 
 ```hbs
 <Form as |form|>

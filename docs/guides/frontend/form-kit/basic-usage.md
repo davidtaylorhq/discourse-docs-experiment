@@ -11,11 +11,16 @@ import Form from "discourse/form"
 
 <template>
   <Form as |form|>
-    <form.Field @name="username" as |field|>
+    <form.Field
+      @name="username"
+      @title="Username"
+      @validation="required"
+      as |field|
+    >
       <field.Input />
     </form.Field>
 
-    <form.Field @name="age" as |field|>
+    <form.Field @name="age" @title="Age" as |field|>
       <field.Input @type="number" />
     </form.Field>
 

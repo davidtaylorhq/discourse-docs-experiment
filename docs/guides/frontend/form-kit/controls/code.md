@@ -10,7 +10,7 @@ Sets the height of the editor.
 
 Sets the language of the editor.
 
-## Examples
+**Examples**
 
 ```hbs
 <Form as |form|>

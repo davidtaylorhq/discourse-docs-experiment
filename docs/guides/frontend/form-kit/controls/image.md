@@ -24,7 +24,7 @@ handleUpload(upload, { set }) {
 </Form>
 ```
 
-### Examples
+**Examples**
 
 ```hbs
 <Form as |form|>

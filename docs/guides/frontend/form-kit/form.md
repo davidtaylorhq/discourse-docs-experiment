@@ -15,7 +15,7 @@ The Form component will yield a form object which contains the following propert
 - [Field](./field)
 - [set](./helpers#set)
 
-#### Examples
+**Examples**
 
 ```hbs
 <Form as |form|>
@@ -33,7 +33,7 @@ Transient data represents the state of the data at a given time as it's represen
 This is useful if you want to have conditionals in your form based on other fields.
 :::
 
-#### Examples
+**Examples**
 
 ```hbs
 <Form as |form transientData|>
@@ -61,11 +61,11 @@ Initial state of the data you give to the form.
 `@data` is treated as an immutable object, following Ember's DDAU pattern. Which means when the user enters new data for any of the fields, it will not cause a mutation of `@data`! You can mutate your initial object using `@onSet`.
 :::
 
-#### Arguments
+**Parameters**
 
 - {Object} data - The data object passed to the template.
 
-#### Examples
+**Examples**
 
 ```hbs
 <Form @data={{hash foo="bar"}} as |form|>
@@ -80,14 +80,14 @@ Initial state of the data you give to the form.
 
 Callback called when the form is inserted. It allows the developer to interact with the form through javascript.
 
-#### Arguments
+**Parameters**
 
 - {Object} callback - The object containing callback functions.
 - {Function} callback.submit - The function to submit the form.
 - {Function} callback.reset - The function to reset the form.
 - {Function} callback.set - The function to set a key/value on the form data object.
 
-#### Examples
+**Examples**
 
 ```javascript
 registerAPI({ submit, reset, set }) {
@@ -105,11 +105,11 @@ registerAPI({ submit, reset, set }) {
 
 Callback called when the form is submitted **and valid**.
 
-#### Arguments
+**Parameters**
 
 - {Object} data - The object containing the form data.
 
-#### Examples
+**Examples**
 
 ```javascript
 handleSubmit({ username, age }) {

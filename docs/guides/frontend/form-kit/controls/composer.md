@@ -6,7 +6,7 @@ Renders a `<DEditor />` component.
 
 Sets the height of the composer.
 
-## Examples
+**Examples**
 
 ```hbs
 <Form as |form|>

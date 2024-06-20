@@ -6,12 +6,12 @@ Helpers are yielded by some blocks, like [Form](./form) or be given as parameter
 
 `set` allows to set any name/value on the form’s data.
 
-### Arguments
+**Parameters**
 
 - {string} name - The name of the field for which the value is to be set.
 - {number} value - The value to be set.
 
-### Examples
+**Examples**
 
 ```javascript
 set("foo", 1);
@@ -19,12 +19,12 @@ set("foo", 1);
 
 ## addError
 
-### Arguments
+**Parameters**
 
 - {string} name - The name of the invalid field.
 - {string} message - The error message.
 
-### Examples
+**Examples**
 
 ```javascript
 addError("foo", "This should be another thing.");
