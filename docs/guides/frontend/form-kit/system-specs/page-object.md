@@ -12,6 +12,10 @@ The FormKit page object component is available to help you write system specs fo
 form = PageObjects::Components::FormKit.new(".my-form")
 ```
 
+```ruby
+form = PageObjects::Components::FormKit.new(find(".my-form"))
+```
+
 ## field(name)
 
 The field helper allows you to interact with a specific field of a form.
