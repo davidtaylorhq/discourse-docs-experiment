@@ -2,7 +2,7 @@
 
 Renders an `<IconPicker />` component.
 
-**Examples**
+**Example**
 
 ```hbs
 <Form as |form|>

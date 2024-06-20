@@ -1,14 +1,12 @@
 # Controls
 
-Controls as we use the term here refer to the UI widgets that allow a user to enter data. In its most basic form that would be an [input](./input).
+Controls, as we use the term here, refer to the UI widgets that allow a user to enter data. In its most basic form, this would be an [input](./input).
 
 :::tip
-
 You can pass down HTML attributes to the underlying control.
-
 :::
 
-**Examples**
+**Example**
 
 ```hbs
 <Form as |form|>

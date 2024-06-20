@@ -6,7 +6,7 @@ Renders an `<input>` element.
 
 Optional property which will default to `text`. Maps to `<input>` types.
 
-## Allowed types
+## Allowed Types
 
 - `color`
 - `date`
@@ -24,9 +24,9 @@ Optional property which will default to `text`. Maps to `<input>` types.
 - `url`
 - `week`
 
-## Special cases
+## Special Cases
 
-- `file` is supported only for images through [checkbox](./image)
+- `file` is supported only for images through [image](./image)
 - [checkbox](./checkbox)
 
 **Examples**

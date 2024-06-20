@@ -1,9 +1,17 @@
 # Submit
 
-Render a `<DButton />` which will submit the form on click. Accepts all the same parameters than a classic `<DButton />`. The label, default action, and primary style is already set by default.
+The `Submit` component renders a `<DButton />` which will submit the form when clicked. It accepts all the same parameters as a standard `<DButton />`. The label, default action, and primary style are set by default.
 
-**Examples**
+**Example**
 
 ```hbs
 <form.Submit />
+```
+
+To customize the `Submit` button further, you can pass additional parameters as needed:
+
+**Example with Additional Parameters**
+
+```hbs
+<form.Submit @translatedLabel="Send" />
 ```

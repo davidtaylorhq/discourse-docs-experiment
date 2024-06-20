@@ -2,17 +2,15 @@
 
 Renders an `<UppyImageUploader />` component.
 
-## Upload handling
+## Upload Handling
 
-By default the component will set an upload object. It's common to only want the URL and the ID of the upload.
-
-To achieve this you can use the `@onSet` property on the field:
+By default, the component will set an upload object. It's common to only want the URL and the ID of the upload. To achieve this, you can use the `@onSet` property on the field:
 
 ```js
 @action
 handleUpload(upload, { set }) {
   set("upload_id", upload.id);
-  set("upload_url", getURL(upload.url)) ;
+  set("upload_url", getURL(upload.url));
 }
 ```
 
@@ -24,7 +22,7 @@ handleUpload(upload, { set }) {
 </Form>
 ```
 
-**Examples**
+**Example**
 
 ```hbs
 <Form as |form|>

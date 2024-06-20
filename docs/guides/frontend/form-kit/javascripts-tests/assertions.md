@@ -2,19 +2,21 @@
 
 ## assert.form()
 
-The form element assertions are available at `assert.form(...).*`:
+The form element assertions are available at `assert.form(...).*`.
 
 **Parameters**
 
-- {string|HTMLElement} target - The form element or selector.
+- `target` (string | HTMLElement): The form element or selector.
 
 ### hasErrors()
 
+Asserts that the form has errors.
+
 **Parameters**
 
-- {string} message - The description of the test.
+- `message` (string): The description of the test.
 
-**Examples**
+**Example**
 
 ```javascript
 assert.form(".my-form").hasErrors("the form shows errors");
@@ -22,13 +24,13 @@ assert.form(".my-form").hasErrors("the form shows errors");
 
 ## assert.form().field()
 
-The field element assertions are available at `assert.form(...).field(...).*`:
+The field element assertions are available at `assert.form(...).field(...).*`.
 
 **Parameters**
 
-- {string} name - The name of the field.
+- `name` (string): The name of the field.
 
-**Examples**
+**Example**
 
 ```javascript
 assert.form(".my-form").field("foo");
@@ -36,17 +38,14 @@ assert.form(".my-form").field("foo");
 
 ### hasValue()
 
-Assert that the `value` of the field matches the `expected` text.
-
-If no `expected` value is provided, the assertion will fail if the
-`value` is an empty string.
+Asserts that the `value` of the field matches the `expected` text. If no `expected` value is provided, the assertion will fail if the `value` is an empty string.
 
 **Parameters**
 
-- {anything} expected - The expected value.
-- {string} [message] - The description of the test.
+- `expected` (anything): The expected value.
+- `message` (string) [optional]: The description of the test.
 
-**Examples**
+**Example**
 
 ```javascript
 assert.form(".my-form").field("foo").hasValue("bar", "user has set the value");
@@ -54,13 +53,13 @@ assert.form(".my-form").field("foo").hasValue("bar", "user has set the value");
 
 ### isDisabled()
 
-Assert that the `field` is disabled.
+Asserts that the `field` is disabled.
 
 **Parameters**
 
-- {string} [message] - The description of the test.
+- `message` (string) [optional]: The description of the test.
 
-**Examples**
+**Example**
 
 ```javascript
 assert.form(".my-form").field("foo").isDisabled("the field is disabled");

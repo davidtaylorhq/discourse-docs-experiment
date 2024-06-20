@@ -1,8 +1,8 @@
 # Customize
 
-## Plugin outlets
+## Plugin Outlets
 
-FormKit works out of the box with `<PluginOutlet />`, you can use them inside your form:
+FormKit works seamlessly with `<PluginOutlet />`. You can use plugin outlets inside your form to extend its functionality:
 
 ```hbs
 <Form as |form|>
@@ -10,7 +10,7 @@ FormKit works out of the box with `<PluginOutlet />`, you can use them inside yo
 </Form>
 ```
 
-And then in your connector:
+Then, in your connector, you can use the outlet arguments to add custom fields:
 
 ```hbs title="connectors/above-foo-form/bar-input.hbs"
 <@outletArgs.form.Field @name="bar" as |field|>
@@ -20,7 +20,7 @@ And then in your connector:
 
 ## Styling
 
-Every components of FormKit will propagate attributes, which allows you to set class and data attributes for example:
+All FormKit components propagate attributes, allowing you to set classes and data attributes, for example:
 
 ```hbs
 <Form class="my-form" as |form|>
@@ -30,30 +30,32 @@ Every components of FormKit will propagate attributes, which allows you to set c
 </Form>
 ```
 
-## Custom control
+## Custom Control
 
-Creating a custom control is made simple by what is yieled by form and field:
+Creating a custom control is straightforward with the properties yielded by `form` and `field`:
 
 ```hbs
 <Form as |form|>
   <form.Field class="my-field" as |field|>
-    <MyCustomControl id={{field.id}} @onChange={{field.set}}>
+    <MyCustomControl id={{field.id}} @onChange={{field.set}} />
   </form.Field>
 </Form>
 ```
 
-Available params on form:
+### Available Parameters on `form`
 
-| name  | description                                            |
-| ----- | ------------------------------------------------------ |
-| `set` | Allows to set the value of any `name`: `set("bar", 1)` |
+| Name  | Description                                                       |
+| ----- | ----------------------------------------------------------------- |
+| `set` | Allows you to set the value of any field by name: `set("bar", 1)` |
 
-Available params on field:
+### Available Parameters on `field`
 
-| name      | description                                    |
-| --------- | ---------------------------------------------- |
-| `set`     | Allows to set the value of the fied: `set(1)`  |
-| `id`      | id to be used on the control for accessibility |
-| `errorId` | id to be used on the errors container          |
-| `name`    | name of the field                              |
-| `value`   | the value of the field                         |
+| Name      | Description                                        |
+| --------- | -------------------------------------------------- |
+| `set`     | Allows you to set the value of the field: `set(1)` |
+| `id`      | ID to be used on the control for accessibility     |
+| `errorId` | ID to be used on the errors container              |
+| `name`    | Name of the field                                  |
+| `value`   | The value of the field                             |
+
+This documentation provides clear instructions and examples for customizing FormKit forms, using plugin outlets, styling components, and creating custom controls.

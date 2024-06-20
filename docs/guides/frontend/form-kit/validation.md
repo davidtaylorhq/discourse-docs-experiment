@@ -1,14 +1,14 @@
 # Validation
 
-[Field](./field) accept a `@validation` property which allows to describe the validation rules of the field.
+[Field](./field) accepts a `@validation` property which allows you to describe the validation rules of the field.
 
-## List of availables rules
+## List of Available Rules
 
 ### Accepted
 
-The value must be `"yes"`, `"on"`, `true`, `1` or `"true"`. Useful for checkbox inputs — often where you need to validate if someone has accepted terms.
+The value must be `"yes"`, `"on"`, `true`, `1`, or `"true"`. Useful for checkbox inputs — often where you need to validate if someone has accepted terms.
 
-**Examples**
+**Example**
 
 ```hbs
 <field.Checkbox @name="terms" @validation="accepted" />
@@ -18,7 +18,7 @@ The value must be `"yes"`, `"on"`, `true`, `1` or `"true"`. Useful for checkbox 
 
 Checks that the input’s value is over a given length, or between two length values.
 
-**Examples**
+**Example**
 
 ```hbs
 <field.Input @name="username" @validation="length:5,16" />
@@ -26,15 +26,13 @@ Checks that the input’s value is over a given length, or between two length va
 
 ### Number
 
-Checks if the input is a valid number as evaluated by isNaN().
+Checks if the input is a valid number as evaluated by `isNaN()`.
 
 :::tip
-
 When applicable, prefer to use the number input: `<field.Input @type="number" />`.
-
 :::
 
-**Examples**
+**Example**
 
 ```hbs
 <field.Input @name="amount" @validation="number" />
@@ -44,7 +42,7 @@ When applicable, prefer to use the number input: `<field.Input @type="number" />
 
 Checks if the input is empty.
 
-**Examples**
+**Example**
 
 ```hbs
 <field.Input @name="username" @validation="required" />
@@ -54,66 +52,66 @@ Checks if the input is empty.
 
 Checks if the input value appears to be a properly formatted URL including the protocol. This does not check if the URL actually resolves.
 
-**Examples**
+**Example**
 
 ```hbs
 <field.Input @name="endpoint" @validation="url" />
 ```
 
-## Combining rules
+## Combining Rules
 
-Rules can be combined using pipe operator: `|`.
+Rules can be combined using the pipe operator: `|`.
 
-**Examples**
+**Example**
 
 ```hbs
 <field.Input @name="username" @validation="required|length:5,16" />
 ```
 
-## Custom validation
+## Custom Validation
 
 ### Field
 
-[Field](./field) accept a `@validate` property which allows to define a callback function to validate the field. [Read more about addError](./helpers#add-error).
+[Field](./field) accepts a `@validate` property which allows you to define a callback function to validate the field. [Read more about addError](./helpers#add-error).
 
 **Parameters**
 
-- {string} name - The name of the form field being validated.
-- {string} value - The value of the form field being validated.
-- {Object} data - The data object containing additional information for validation.
-- {Object} handlers - An object containing handler functions.
-- {Function} handlers.addError - A function to add an error if validation fails.
+- `name` (string): The name of the form field being validated.
+- `value` (string): The value of the form field being validated.
+- `data` (Object): The data object containing additional information for validation.
+- `handlers` (Object): An object containing handler functions.
+  - `handlers.addError` (Function): A function to add an error if validation fails.
 
-**Examples**
+**Example**
 
 ```javascript
 validateUsername(name, value, data, { addError }) {
   if (data.bar / 2 === value) {
-    addError(name, "That's not how maths work.")
+    addError(name, "That's not how maths work.");
   }
 }
 ```
 
 ```hbs
-<form.Field @name="username" @validate={{this.validateUsername}}>
+<form.Field @name="username" @validate={{this.validateUsername}} />
 ```
 
 ### Form
 
-[Form](./form) accept a `@validate` property which allows to define a callback function to validate the form. This will be called for each field of the form.
+[Form](./form) accepts a `@validate` property which allows you to define a callback function to validate the form. This will be called for each field of the form.
 
 **Parameters**
 
-- {Object} data - The data object containing additional information for validation.
-- {Object} handlers - An object containing handler functions.
-- {Function} handlers.addError - A function to add an error if validation fails.
+- `data` (Object): The data object containing additional information for validation.
+- `handlers` (Object): An object containing handler functions.
+  - `handlers.addError` (Function): A function to add an error if validation fails.
 
-**Examples**
+**Example**
 
 ```javascript
 validateForm(data, { addError }) {
   if (data.bar / 2 === data.baz) {
-    addError("foo", "That's not how maths work.")
+    addError("foo", "That's not how maths work.");
   }
 }
 ```

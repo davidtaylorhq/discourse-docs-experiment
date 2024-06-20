@@ -2,9 +2,9 @@
 
 ## @name
 
-A field must have a unique name. This name is used to set the value on the data object, and is also used for validation.
+A field must have a unique name. This name is used to set the value on the data object and is also used for validation.
 
-**Examples**
+**Example**
 
 ```hbs
 <form.Field @name="foo" />
@@ -12,9 +12,9 @@ A field must have a unique name. This name is used to set the value on the data 
 
 ## @title
 
-A field must have a title, it will be displayed over the control and is also used in validation.
+A field must have a title. It will be displayed above the control and is also used in validation.
 
-**Examples**
+**Example**
 
 ```hbs
 <form.Field @title="Foo" />
@@ -24,7 +24,7 @@ A field must have a title, it will be displayed over the control and is also use
 
 The subtitle is optional and will be shown under the title when set.
 
-**Examples**
+**Example**
 
 ```hbs
 <form.Field @subtitle="Bar" />
@@ -32,9 +32,9 @@ The subtitle is optional and will be shown under the title when set.
 
 ## @showTitle
 
-By default the title will be shown on top of the control, you can decide to not render it by setting this property to `false`.
+By default, the title will be shown on top of the control. You can choose not to render it by setting this property to `false`.
 
-**Examples**
+**Example**
 
 ```hbs
 <form.Field @showTitle={{false}} />
@@ -42,12 +42,12 @@ By default the title will be shown on top of the control, you can decide to not 
 
 ## @disabled
 
-A field can be disabled to prevent any change to it.
+A field can be disabled to prevent any changes to it.
 
-**Examples**
+**Example**
 
 ```hbs
-<form.Field @diasbled={{true}} />
+<form.Field @disabled={{true}} />
 ```
 
 ## @validation
@@ -60,9 +60,9 @@ Read the dedicated [documentation about @validate](./custom-validation).
 
 ## @onSet
 
-By default when changing the value of a field, this value will be set on the form internal data object. You can however decide to get full controll of this for a field.
+By default, when changing the value of a field, this value will be set on the form's internal data object. However, you can choose to have full control over this process for a field.
 
-**Examples**
+**Example**
 
 ```javascript
 @action
@@ -78,10 +78,10 @@ handleFooChange(value, { set }) {
 ```
 
 :::tip
-
 You can use `@onSet` to also mutate the initial data object if you need more reactivity for a specific case.
-
 :::
+
+**Example**
 
 ```javascript
 @action

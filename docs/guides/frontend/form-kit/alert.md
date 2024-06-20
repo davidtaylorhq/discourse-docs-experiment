@@ -6,7 +6,7 @@ Displays an alert in the form.
 
 An optional icon to use in the alert.
 
-**Examples**
+**Example**
 
 ```hbs
 <form.Alert @icon="info-circle">
@@ -16,9 +16,9 @@ An optional icon to use in the alert.
 
 ## @type
 
-An optional icon to use in the alert. Allowed types: `success`, `error`, `warning` or `info`.
+Specifies the type of alert. Allowed types: `success`, `error`, `warning`, or `info`.
 
-**Examples**
+**Example**
 
 ```hbs
 <form.Alert @type="warning">

@@ -1,10 +1,10 @@
 # Form
 
-## yielded params
+## Yielded Parameters
 
 ### form
 
-The Form component will yield a form object which contains the following properties:
+The `Form` component yields a `form` object containing the following properties:
 
 - [Row](./layout#row-and-col)
 - [Section](./layout#section)
@@ -15,7 +15,7 @@ The Form component will yield a form object which contains the following propert
 - [Field](./field)
 - [set](./helpers#set)
 
-**Examples**
+**Example**
 
 ```hbs
 <Form as |form|>
@@ -27,21 +27,21 @@ The Form component will yield a form object which contains the following propert
 
 ### transientData
 
-Transient data represents the state of the data at a given time as it's represented in the form, and not yet propagated to the `@data`.
+`transientData` represents the state of the data at a given time as it's represented in the form, and not yet propagated to `@data`.
 
 :::tip
 This is useful if you want to have conditionals in your form based on other fields.
 :::
 
-**Examples**
+**Example**
 
 ```hbs
 <Form as |form transientData|>
   <form.Field @name="amount" as |field|>
-    <field.Input @type="number">
+    <field.Input @type="number" />
   </form.Field>
 
-  {{#if (gt amount 200)}}
+  {{#if (gt transientData.amount 200)}}
     <form.Field @name="confirmed" as |field|>
       <field.Checkbox>I know what I'm doing</field.Checkbox>
     </form.Field>
@@ -55,22 +55,22 @@ This is useful if you want to have conditionals in your form based on other fiel
 
 Initial state of the data you give to the form.
 
-**The keys matchting the `@name`s of the form's fields will be prepopulated.**
+**The keys matching the `@name`s of the form's fields will be prepopulated.**
 
 :::info
-`@data` is treated as an immutable object, following Ember's DDAU pattern. Which means when the user enters new data for any of the fields, it will not cause a mutation of `@data`! You can mutate your initial object using `@onSet`.
+`@data` is treated as an immutable object, following Ember's DDAU pattern. This means when the user enters new data for any of the fields, it will not cause a mutation of `@data`! You can mutate your initial object using `@onSet`.
 :::
 
-**Parameters**
+**Parameter**
 
-- {Object} data - The data object passed to the template.
+- `data` (Object): The data object passed to the template.
 
-**Examples**
+**Example**
 
 ```hbs
 <Form @data={{hash foo="bar"}} as |form|>
   <form.Field @name="foo" as |field|>
-    <!-- This input will have bar as value -->
+    <!-- This input will have "bar" as its initial value -->
     <field.Input />
   </form.Field>
 </Form>
@@ -78,19 +78,20 @@ Initial state of the data you give to the form.
 
 ### @onRegisterApi
 
-Callback called when the form is inserted. It allows the developer to interact with the form through javascript.
+Callback called when the form is inserted. It allows the developer to interact with the form through JavaScript.
 
 **Parameters**
 
-- {Object} callback - The object containing callback functions.
-- {Function} callback.submit - The function to submit the form.
-- {Function} callback.reset - The function to reset the form.
-- {Function} callback.set - The function to set a key/value on the form data object.
+- `callback` (Object): The object containing callback functions.
+  - `callback.submit` (Function): Function to submit the form.
+  - `callback.reset` (Function): Function to reset the form.
+  - `callback.set` (Function): Function to set a key/value on the form data object.
 
-**Examples**
+**Example**
 
 ```javascript
 registerAPI({ submit, reset, set }) {
+  // Interact with the form API
   submit();
   reset();
   set("foo", 1);
@@ -107,9 +108,9 @@ Callback called when the form is submitted **and valid**.
 
 **Parameters**
 
-- {Object} data - The object containing the form data.
+- `data` (Object): The object containing the form data.
 
-**Examples**
+**Example**
 
 ```javascript
 handleSubmit({ username, age }) {
@@ -125,5 +126,8 @@ handleSubmit({ username, age }) {
   <form.Field @name="age" as |field|>
     <field.Input @type="number" />
   </form.Field>
+  <form.Submit />
 </Form>
 ```
+
+This documentation provides a clear and concise overview of the `Form` component, its yielded parameters, and properties, along with practical examples to help users understand and utilize the functionality effectively.

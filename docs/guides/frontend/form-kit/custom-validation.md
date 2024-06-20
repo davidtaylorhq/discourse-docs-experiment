@@ -1,49 +1,49 @@
-# Custom validation
+# Custom Validation
 
 ## Field
 
-[Field](./field) accept a `@validate` property which allows to define a callback function to validate the field. [Read more about addError](./helpers#add-error).
+The [Field](./field) component accepts a `@validate` property, allowing you to define a callback function for custom field validation. [Read more about addError](./helpers#add-error).
 
 **Parameters**
 
-- {string} name - The name of the form field being validated.
-- {string} value - The value of the form field being validated.
-- {Object} data - The data object containing additional information for validation.
-- {Object} handlers - An object containing handler functions.
-- {Function} handlers.addError - A function to add an error if validation fails.
+- `name` (string): The name of the form field being validated.
+- `value` (string): The value of the form field being validated.
+- `data` (Object): The data object containing additional information for validation.
+- `handlers` (Object): An object containing handler functions.
+  - `handlers.addError` (Function): A function to add an error if validation fails.
 
-**Examples**
+**Example**
 
 ```javascript
 validateUsername(name, value, data, { addError }) {
   if (data.bar / 2 === value) {
-    addError(name, "That's not how maths work.")
+    addError(name, "That's not how maths work.");
   }
 }
 ```
 
 ```hbs
-<form.Field @name="username" @validate={{this.validateUsername}}>
+<form.Field @name="username" @validate={{this.validateUsername}} />
 ```
 
 ## Form
 
-[Form](./form) accept a `@validate` property which allows to define a callback function to validate the form. This will be called for each field of the form.
+The [Form](./form) component accepts a `@validate` property, allowing you to define a callback function for custom form validation. This callback will be called for each field in the form.
 
 **Parameters**
 
-- {string} name - The name of the form field being validated.
-- {string} value - The value of the form field being validated.
-- {Object} data - The data object containing additional information for validation.
-- {Object} handlers - An object containing handler functions.
-- {Function} handlers.addError - A function to add an error if validation fails.
+- `name` (string): The name of the form field being validated.
+- `value` (string): The value of the form field being validated.
+- `data` (Object): The data object containing additional information for validation.
+- `handlers` (Object): An object containing handler functions.
+  - `handlers.addError` (Function): A function to add an error if validation fails.
 
-**Examples**
+**Example**
 
 ```javascript
 validateForm(data, { addError }) {
   if (data.bar / 2 === data.baz) {
-    addError("foo", "That's not how maths work.")
+    addError("foo", "That's not how maths work.");
   }
 }
 ```
@@ -51,3 +51,5 @@ validateForm(data, { addError }) {
 ```hbs
 <Form @validate={{this.validateForm}} />
 ```
+
+This documentation provides clarity on how to implement custom validation for both individual fields and the entire form using the `@validate` property. It includes parameter descriptions and practical examples.

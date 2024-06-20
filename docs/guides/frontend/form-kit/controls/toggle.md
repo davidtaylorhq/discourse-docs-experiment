@@ -1,8 +1,8 @@
 # Toggle
 
-Renders an `<DToggleSwitch />` component.
+Renders a `<DToggleSwitch />` component.
 
-**Examples**
+**Example**
 
 ```hbs
 <Form as |form|>

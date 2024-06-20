@@ -1,14 +1,12 @@
 # Layout
 
-By default Form Kit will always attempt to have good defaults, and you should need to only use fields/controls.
-
-If you need more control, we provide few helpers: `Row`, `Col`, `Section`, `Container`, `Actions` and `@format`.
+By default, Form Kit aims to provide good defaults, allowing you to mainly use fields and controls. However, if you need more control, we provide several helpers: `Row`, `Col`, `Section`, `Container`, `Actions`, and `@format`.
 
 ## Row and Col
 
-Row and Col allows you to have the advantages of a simple grid system (12 columns) in your form.
+`Row` and `Col` enable you to utilize a simple grid system (12 columns) within your form.
 
-**Examples**
+**Example**
 
 ```hbs
 <Form as |form|>
@@ -29,16 +27,16 @@ Row and Col allows you to have the advantages of a simple grid system (12 column
 
 ## Format
 
-Controls accepts a `@format` property which can be: `small`, `medium`, `large` or `full`.
+Controls accept a `@format` property which can be: `small`, `medium`, `large`, or `full`.
 
-By default, Form Kit will set defaults for each controls but you can override them using `@format`.
+Form Kit sets defaults for each control, but you can override them using `@format`:
 
 - small: `100px`
 - medium: `220px`
 - large: `400px`
 - full: `100%`
 
-**Examples**
+**Example**
 
 ```hbs
 <form.Field @name="bar" @title="Bar" @format="small" as |field|>
@@ -46,45 +44,45 @@ By default, Form Kit will set defaults for each controls but you can override th
 </form.Field>
 ```
 
-The following CSS variables are also provided to change these defaults:
+Additionally, the following CSS variables are provided to customize these defaults:
 
-- small: `--form-kit-large-input`
+- small: `--form-kit-small-input`
 - medium: `--form-kit-medium-input`
-- large: `--form-kit-small-input`
+- large: `--form-kit-large-input`
 
 ## Section
 
-A simple way to create a section with or without a title.
+`Section` provides a simple way to create a section with or without a title.
 
-**Examples**
+**Example**
 
 ```hbs
 <Form as |form|>
   <form.Section @title="Settings">
-    <!--  -->
+    <!-- Section content here -->
   </form.Section>
 </Form>
 ```
 
 ## Container
 
-Allows to render a block similar to a [field](./field) without having to tie it to a specific data. It's very useful for [custom controls](./customize#custom-control) for example
+`Container` allows you to render a block similar to a [field](./field) without tying it to specific data. It is useful for [custom controls](./customize#custom-control).
 
-**Examples**
+**Example**
 
 ```hbs
 <Form as |form|>
   <form.Container @title="Important" @subtitle="This is important">
-    <!--  -->
+    <!-- Container content here -->
   </form.Container>
 </Form>
 ```
 
 ## Actions
 
-Actions is a custom Container to wrap your buttons in the footer of your form, most likely.
+`Actions` is a custom `Container` designed to wrap your buttons in the footer of your form.
 
-**Examples**
+**Example**
 
 ```hbs
 <Form as |form|>

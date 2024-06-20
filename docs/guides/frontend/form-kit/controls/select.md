@@ -2,7 +2,7 @@
 
 Renders a `<select>` element.
 
-**Examples**
+**Example**
 
 ```hbs
 <Form as |form|>
