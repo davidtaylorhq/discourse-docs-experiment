@@ -38,11 +38,19 @@ By default, Form Kit will set defaults for each controls but you can override th
 - large: `400px`
 - full: `100%`
 
+**Examples**
+
+```hbs
+<form.Field @name="bar" @title="Bar" @format="small" as |field|>
+  <field.Input />
+</form.Field>
+```
+
 The following CSS variables are also provided to change these defaults:
 
 - small: `--form-kit-large-input`
 - medium: `--form-kit-medium-input`
-- alrge: `--form-kit-small-input`
+- large: `--form-kit-small-input`
 
 ## Section
 
