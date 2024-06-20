@@ -4,10 +4,6 @@ The FormKit page object component is available to help you write system specs fo
 
 **Parameters**
 
-|                    | type                               | required |
-| ------------------ | ---------------------------------- | -------- |
-| `node or selector` | `string` `Capybara::Node::Element` | `true`   |
-
 - {string|Capybara::Node::Element} target - The selector or node of the form.
 
 **Examples**
