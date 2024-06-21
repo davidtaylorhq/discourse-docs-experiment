@@ -6,12 +6,12 @@
 
 The `Form` component yields a `form` object containing the following properties:
 
-- [Row](./layout#row-and-col)
+- [Row/Col](./layout#row-and-col)
 - [Section](./layout#section)
 - [Container](./layout#container)
 - [Actions](./layout#actions)
-- [Alert](./alert)
-- [Submit](./submit)
+- [Alert](./layout/alert)
+- [Submit](./layout/submit)
 - [Field](./field)
 - [set](./helpers#set)
 
