@@ -6,7 +6,7 @@
 
 The `Form` component yields a `form` object containing the following properties:
 
-- [Row/Col](./layout#row-and-col)
+- [Row/Col](./layout/row-col)
 - [Section](./layout#section)
 - [Container](./layout#container)
 - [Actions](./layout#actions)
