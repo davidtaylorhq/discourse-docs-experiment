@@ -21,3 +21,28 @@ You can pass down HTML attributes to the underlying control.
   </form.Field>
 </Form>
 ```
+
+## @format
+
+Controls accept a `@format` property which can be: `small`, `medium`, `large`, or `full`.
+
+Form Kit sets defaults for each control, but you can override them using `@format`:
+
+- small: `100px`
+- medium: `220px`
+- large: `400px`
+- full: `100%`
+
+**Example**
+
+```hbs
+<form.Field @name="bar" @title="Bar" @format="small" as |field|>
+  <field.Input />
+</form.Field>
+```
+
+Additionally, the following CSS variables are provided to customize these defaults:
+
+- small: `--form-kit-small-input`
+- medium: `--form-kit-medium-input`
+- large: `--form-kit-large-input`
