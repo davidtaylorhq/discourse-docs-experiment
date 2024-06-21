@@ -17,6 +17,14 @@ Helpers are yielded by some blocks, like [Form](./form), or provided as paramete
 set("foo", 1);
 ```
 
+Using the set helper yielded by the form:
+
+```hbs
+<Form as |form|>
+  <DButton @action={{fn form.set "foo" 1}} @translatedLabel="Set foo" />
+</Form>
+```
+
 ## addError
 
 `addError` allows you to add an error message to a specific field in the form.
