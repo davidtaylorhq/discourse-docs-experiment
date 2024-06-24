@@ -166,3 +166,19 @@ myValidation(data, { addError }) {
 ```hbs
 <Form @validate={{this.myValidation}} />
 ```
+
+An asynchronous example:
+
+```javascript
+@action
+async myValidation(data, { addError }) {
+  try {
+    await ajax("/check-username", {
+      type: "POST",
+      data: { username: data.username }
+    });
+  } catch(e) {
+    addError("username", "Already taken!");
+  }
+}
+```
