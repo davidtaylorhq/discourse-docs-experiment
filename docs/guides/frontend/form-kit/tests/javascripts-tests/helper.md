@@ -28,7 +28,7 @@ test("fill in input", async function (assert) {
 
 ### fillIn()
 
-Can be used on [`<field.Input @type="text" />`](/docs/guides/frontend/form-kit/controls/input), [`<field.Code />`](/docs/guides/frontend/form-kit/controls/code), [`<field.Text />`](/docs/guides/frontend/form-kit/controls/text), and [`<field.Composer />`](/docs/guides/frontend/form-kit/controls/composer).
+Can be used on [`<field.Input @type="text" />`](/docs/guides/frontend/form-kit/controls/input), [`<field.Code />`](/docs/guides/frontend/form-kit/controls/code), [`<field.Textarea />`](/docs/guides/frontend/form-kit/controls/textarea), and [`<field.Composer />`](/docs/guides/frontend/form-kit/controls/composer).
 
 **Parameters**
 
