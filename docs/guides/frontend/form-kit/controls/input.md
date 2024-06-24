@@ -33,11 +33,11 @@ Optional property which will default to `text`. Maps to `<input>` types.
 
 ```hbs
 <Form as |form|>
-  <form.Field @name="email" as |field|>
+  <form.Field @name="email" @title="Email" as |field|>
     <field.Input />
   </form.Field>
 
-  <form.Field @name="age" @type="number" as |field|>
+  <form.Field @name="age" @title="Age" @type="number" as |field|>
     <field.Input />
   </form.Field>
 </Form>

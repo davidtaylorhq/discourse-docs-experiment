@@ -14,7 +14,7 @@ Sets the language of the editor.
 
 ```hbs
 <Form as |form|>
-  <form.Field @name="query" as |field|>
+  <form.Field @name="query" @title="Query" as |field|>
     <field.Code @lang="sql" @height={{400}} />
   </form.Field>
 </Form>

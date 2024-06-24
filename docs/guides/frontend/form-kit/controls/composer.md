@@ -10,7 +10,7 @@ Sets the height of the composer.
 
 ```hbs
 <Form as |form|>
-  <form.Field @name="message" as |field|>
+  <form.Field @name="message" @title="Message" as |field|>
     <field.Composer @height={{400}} />
   </form.Field>
 </Form>

@@ -6,7 +6,7 @@ Renders a `<DToggleSwitch />` component.
 
 ```hbs
 <Form as |form|>
-  <form.Field @name="allowed" as |field|>
+  <form.Field @name="allowed" @title="Allowed" as |field|>
     <field.Toggle />
   </form.Field>
 </Form>

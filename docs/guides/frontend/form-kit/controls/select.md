@@ -6,7 +6,7 @@ Renders a `<select>` element.
 
 ```hbs
 <Form as |form|>
-  <form.Field @name="fruits" as |field|>
+  <form.Field @name="fruits" @title="Fruits" as |field|>
     <field.Select as |select|>
       <select.Option @value="1">Mango</select.Option>
       <select.Option @value="2">Apple</select.Option>

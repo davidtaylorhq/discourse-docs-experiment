@@ -6,7 +6,7 @@ Renders an `<IconPicker />` component.
 
 ```hbs
 <Form as |form|>
-  <form.Field @name="icon" as |field|>
+  <form.Field @name="icon" @title="Icon" as |field|>
     <field.Icon />
   </form.Field>
 </Form>

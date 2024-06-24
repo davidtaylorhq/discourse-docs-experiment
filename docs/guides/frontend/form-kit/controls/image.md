@@ -16,7 +16,12 @@ handleUpload(upload, { set }) {
 
 ```hbs
 <Form as |form|>
-  <form.Field @name="upload" @onSet={{this.handleUpload}} as |field|>
+  <form.Field
+    @name="upload"
+    @title="Upload"
+    @onSet={{this.handleUpload}}
+    as |field|
+  >
     <field.Image />
   </form.Field>
 </Form>
@@ -26,7 +31,7 @@ handleUpload(upload, { set }) {
 
 ```hbs
 <Form as |form|>
-  <form.Field @name="upload" as |field|>
+  <form.Field @name="upload" @title="Upload" as |field|>
     <field.Image />
   </form.Field>
 </Form>

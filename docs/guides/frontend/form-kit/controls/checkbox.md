@@ -6,7 +6,7 @@ Renders an `<input type="checkbox">` element.
 
 ```hbs
 <Form as |form|>
-  <form.Field @name="approved" as |field|>
+  <form.Field @name="approved" @title="Approved" as |field|>
     <field.Checkbox />
   </form.Field>
 </Form>
