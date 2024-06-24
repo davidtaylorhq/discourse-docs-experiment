@@ -131,3 +131,38 @@ handleSubmit({ username, age }) {
 ```
 
 This documentation provides a clear and concise overview of the `Form` component, its yielded parameters, and properties, along with practical examples to help users understand and utilize the functionality effectively.
+
+### @mutable
+
+By default the form data will be passed on submit and is not mutating the original data object while interacting with the form. If you prefer this mutation before you can use `@mutable={{true}}`.
+
+:::danger
+
+We don't recommend using it as it breaks DDAU (Data Down Actions Up)!
+
+:::
+
+**Example**
+
+```hbs
+<Form @mutable={{true}} />
+```
+
+### @validate
+
+A custom validation callback added directly to the form.
+
+**Example**
+
+```javascript
+@action
+myValidation(data, { addError }) {
+  if (data.foo !== data.bar) {
+    addError("foo", "Bar must be equal to Foo");
+  }
+}
+```
+
+```hbs
+<Form @validate={{this.myValidation}} />
+```
