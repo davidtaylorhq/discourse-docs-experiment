@@ -1,5 +1,7 @@
 # Page Object
 
+## Form
+
 The FormKit page object component is available to help you write system specs for your forms.
 
 **Parameters**
@@ -26,6 +28,16 @@ Submits the form
 form.submit
 ```
 
+### reset
+
+Reset the form
+
+**Example**
+
+```ruby
+form.reset
+```
+
 ### has_an_alert?
 
 Returns if the field is enabled or not.
@@ -40,7 +52,7 @@ form.has_an_alert?("message")
 expect(form).to have_an_alert("message")
 ```
 
-## field(name)
+## Field
 
 The `field` helper allows you to interact with a specific field of a form.
 
