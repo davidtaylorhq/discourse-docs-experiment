@@ -16,6 +16,30 @@ form = PageObjects::Components::FormKit.new(".my-form")
 form = PageObjects::Components::FormKit.new(find(".my-form"))
 ```
 
+### submit
+
+Submits the form
+
+**Example**
+
+```ruby
+form.submit
+```
+
+### has_an_alert?
+
+Returns if the field is enabled or not.
+
+**Example**
+
+```ruby
+form.has_an_alert?("message")
+```
+
+```ruby
+expect(form).to have_an_alert("message")
+```
+
 ## field(name)
 
 The `field` helper allows you to interact with a specific field of a form.
@@ -38,6 +62,38 @@ Returns the value of the field.
 
 ```ruby
 field.value
+```
+
+```ruby
+expect(field).to have_value("bar")
+```
+
+### checked?
+
+Returns if the control of a checkbox is checked or not.
+
+**Example**
+
+```ruby
+field.checked?
+```
+
+```ruby
+expect(field).to be_checked
+```
+
+### unchecked?
+
+Returns if the control of a checkbox is unchecked or not.
+
+**Example**
+
+```ruby
+field.unchecked?
+```
+
+```ruby
+expect(field).to be_unchecked
 ```
 
 ### disabled?

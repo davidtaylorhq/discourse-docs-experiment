@@ -2,6 +2,12 @@
 
 Renders a `<DToggleSwitch />` component.
 
+:::tip When to use a toggle
+
+There are only 2 states: enabled/disabled. It should feel like turning something on. Toggling takes effect immediately, there is no submit button.
+
+:::
+
 **Example**
 
 ```hbs

@@ -11,7 +11,7 @@ Sets the height of the textarea.
 ```hbs
 <Form as |form|>
   <form.Field @name="description" @title="Description" as |field|>
-    <field.Text @height={{120}} />
+    <field.Textarea @height={{120}} />
   </form.Field>
 </Form>
 ```

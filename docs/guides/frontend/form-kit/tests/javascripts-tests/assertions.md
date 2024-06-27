@@ -1,8 +1,8 @@
 # Assertions
 
-## assert.form()
+## Form
 
-The form element assertions are available at `assert.form(...).*`.
+The form element assertions are available at `assert.form(...).*`. By default it will select the first "form" element.
 
 **Parameters**
 
@@ -19,10 +19,10 @@ Asserts that the form has errors.
 **Example**
 
 ```javascript
-assert.form(".my-form").hasErrors("the form shows errors");
+assert.form().hasErrors("the form shows errors");
 ```
 
-## assert.form().field()
+## Field
 
 The field element assertions are available at `assert.form(...).field(...).*`.
 
@@ -33,12 +33,12 @@ The field element assertions are available at `assert.form(...).field(...).*`.
 **Example**
 
 ```javascript
-assert.form(".my-form").field("foo");
+assert.form().field("foo");
 ```
 
 ### hasValue()
 
-Asserts that the `value` of the field matches the `expected` text. If no `expected` value is provided, the assertion will fail if the `value` is an empty string.
+Asserts that the `value` of the field matches the `expected` text.
 
 **Parameters**
 
@@ -48,7 +48,7 @@ Asserts that the `value` of the field matches the `expected` text. If no `expect
 **Example**
 
 ```javascript
-assert.form(".my-form").field("foo").hasValue("bar", "user has set the value");
+assert.form().field("foo").hasValue("bar", "user has set the value");
 ```
 
 ### isDisabled()
@@ -62,5 +62,76 @@ Asserts that the `field` is disabled.
 **Example**
 
 ```javascript
-assert.form(".my-form").field("foo").isDisabled("the field is disabled");
+assert.form().field("foo").isDisabled("the field is disabled");
+```
+
+### isEnabled()
+
+Asserts that the `field` is enabled.
+
+**Parameters**
+
+- `message` (string) [optional]: The description of the test.
+
+**Example**
+
+```javascript
+assert.form().field("foo").isEnabled("the field is enabled");
+```
+
+### hasError()
+
+Asserts that the `field` has a specific error.
+
+**Parameters**
+
+- `error` (string): The error messag on the field.
+- `message` (string) [optional]: The description of the test.
+
+**Example**
+
+```javascript
+assert.form().field("foo").hasError("Required", "it is required");
+```
+
+### hasNoError()
+
+Asserts that the `field` has no error.
+
+**Parameters**
+
+- `message` (string) [optional]: The description of the test.
+
+**Example**
+
+```javascript
+assert.form().field("foo").hasNoError("it is valid");
+```
+
+### exists()
+
+Asserts that the `field` is present.
+
+**Parameters**
+
+- `message` (string) [optional]: The description of the test.
+
+**Example**
+
+```javascript
+assert.form().field("foo").exists("it has the food field");
+```
+
+### doesNotExist()
+
+Asserts that the `field` is not present.
+
+**Parameters**
+
+- `message` (string) [optional]: The description of the test.
+
+**Example**
+
+```javascript
+assert.form().field("foo").doesNotExist("it has no food field");
 ```
