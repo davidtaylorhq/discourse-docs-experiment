@@ -135,3 +135,19 @@ Asserts that the `field` is not present.
 ```javascript
 assert.form().field("foo").doesNotExist("it has no food field");
 ```
+
+### hasCharCounter()
+
+Asserts that the `field` has a char counter.
+
+**Parameters**
+
+- `current` (integer): The current length of the field.
+- `max` (integer): The max length of the field.
+- `message` (string) [optional]: The description of the test.
+
+**Example**
+
+```javascript
+assert.form().field("foo").hasCharCounter(2, 5, "it has updated the counter");
+```
