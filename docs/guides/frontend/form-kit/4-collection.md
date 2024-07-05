@@ -14,6 +14,18 @@ The collection component allows to handle array of objects in your form.
 </Form>
 ```
 
+## @name
+
+A collection must have a unique name. This name is used as a prefix for the underlying fields.
+
+For example, if collection has the name "foo", the 2nd field of the collection with the name "bar", will actually have "foo.1.bar" as name.
+
+**Example**
+
+```hbs
+<form.Collection @name="foo" />
+```
+
 ## Add an item to the collection
 
 The `<Form />` component yielded object has a `addItemToCollection` function that you can call to add an item to a specific collection.
