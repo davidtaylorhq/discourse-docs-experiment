@@ -131,22 +131,6 @@ handleSubmit({ username, age }) {
 </Form>
 ```
 
-### @mutable
-
-By default the form data will be passed on submit and is not mutating the original data object while interacting with the form. If you prefer this mutation before you can use `@mutable={{true}}`.
-
-:::danger
-
-We don't recommend using it as it breaks DDAU (Data Down Actions Up)!
-
-:::
-
-**Example**
-
-```hbs
-<Form @mutable={{true}} />
-```
-
 ### @validate
 
 A custom validation callback added directly to the form.
