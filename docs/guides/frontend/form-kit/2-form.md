@@ -157,7 +157,7 @@ A custom validation callback added directly to the form.
 @action
 myValidation(data, { addError }) {
   if (data.foo !== data.bar) {
-    addError("foo", "Bar must be equal to Foo");
+    addError("foo", { title: "Foo", message: "Bar must be equal to Foo" });
   }
 }
 ```
@@ -177,7 +177,7 @@ async myValidation(data, { addError }) {
       data: { username: data.username }
     });
   } catch(e) {
-    addError("username", "Already taken!");
+    addError("username", { title: "Username", message: "Already taken!" });
   }
 }
 ```

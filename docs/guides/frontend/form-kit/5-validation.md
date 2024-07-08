@@ -87,7 +87,7 @@ Rules can be combined using the pipe operator: `|`.
 ```javascript
 validateUsername(name, value, data, { addError }) {
   if (data.bar / 2 === value) {
-    addError(name, "That's not how maths work.");
+    addError(name, { title: I18n.t(`foo.bar.${name}`), message: "That's not how maths work." });
   }
 }
 ```
@@ -111,7 +111,7 @@ validateUsername(name, value, data, { addError }) {
 ```javascript
 validateForm(data, { addError }) {
   if (data.bar / 2 === data.baz) {
-    addError("foo", "That's not how maths work.");
+    addError(name, { title: I18n.t(`foo.bar.${name}`), message: "That's not how maths work." });
   }
 }
 ```

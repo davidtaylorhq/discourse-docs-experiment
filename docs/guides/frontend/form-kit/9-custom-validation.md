@@ -17,7 +17,7 @@ The [Field](./field) component accepts a `@validate` property, allowing you to d
 ```javascript
 validateUsername(name, value, data, { addError }) {
   if (data.bar / 2 === value) {
-    addError(name, "That's not how maths work.");
+    addError(name, { title: I18n.t(`foo.bar.${name}`), message: "That's not how maths work." });
   }
 }
 ```
@@ -43,7 +43,7 @@ The [Form](./form) component accepts a `@validate` property, allowing you to def
 ```javascript
 validateForm(data, { addError }) {
   if (data.bar / 2 === data.baz) {
-    addError("foo", "That's not how maths work.");
+    addError(name, { title: I18n.t(`foo.bar.${name}`), message: "That's not how maths work." });
   }
 }
 ```

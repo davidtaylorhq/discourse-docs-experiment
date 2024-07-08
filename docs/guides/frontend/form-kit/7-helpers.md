@@ -32,10 +32,12 @@ Using the set helper yielded by the form:
 **Parameters**
 
 - `name` (string): The name of the field that is invalid.
-- `message` (string): The error message.
+- `error` (object): The error’s data
+  - `title` (string): The title of the error, usually the translated name of the field
+  - `message` (string): The error message
 
 **Example**
 
 ```javascript
-addError("foo", "This should be another thing.");
+addError("foo", { title: "Foo", message: "This should be another thing." });
 ```
