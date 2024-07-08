@@ -28,7 +28,7 @@ validateUsername(name, value, data, { addError }) {
 
 ## Form
 
-The [Form](./form) component accepts a `@validate` property, allowing you to define a callback function for custom form validation. This callback will be called for each field in the form.
+The [Form](./form) component accepts a `@validate` property, allowing you to define a callback function for custom form validation.
 
 **Parameters**
 
