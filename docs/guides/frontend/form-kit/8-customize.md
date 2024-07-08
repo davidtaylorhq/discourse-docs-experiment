@@ -50,12 +50,8 @@ Creating a custom control is straightforward with the properties yielded by `for
 
 ### Available Parameters on `field`
 
-| Name      | Description                                        |
-| --------- | -------------------------------------------------- |
-| `set`     | Allows you to set the value of the field: `set(1)` |
-| `id`      | ID to be used on the control for accessibility     |
-| `errorId` | ID to be used on the errors container              |
-| `name`    | Name of the field                                  |
-| `value`   | The value of the field                             |
-
-This documentation provides clear instructions and examples for customizing FormKit forms, using plugin outlets, styling components, and creating custom controls.
+| Name    | Description                                    |
+| ------- | ---------------------------------------------- |
+| `id`    | ID to be used on the control for accessibility |
+| `name`  | Name of the field                              |
+| `value` | The value of the field                         |

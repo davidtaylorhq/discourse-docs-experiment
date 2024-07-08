@@ -39,5 +39,3 @@ Using the set helper yielded by the form:
 ```javascript
 addError("foo", "This should be another thing.");
 ```
-
-This documentation provides clarity on the purpose and usage of the helpers, along with proper parameter descriptions and examples.

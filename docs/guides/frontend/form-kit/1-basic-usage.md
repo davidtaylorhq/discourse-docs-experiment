@@ -28,5 +28,3 @@ import Form from "discourse/form";
   </Form>
 </template>
 ```
-
-This example demonstrates a basic form with two fields: one for the username and one for the age, along with a submit button. The `@name` attribute is used to uniquely identify each field, `@title` provides a label for the field, and `@validation` specifies any validation rules (e.g., required). The `Input` component is used to render the input elements, and `Submit` provides a button to submit the form.

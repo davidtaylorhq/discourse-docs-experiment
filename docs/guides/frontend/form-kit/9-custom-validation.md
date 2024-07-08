@@ -51,5 +51,3 @@ validateForm(data, { addError }) {
 ```hbs
 <Form @validate={{this.validateForm}} />
 ```
-
-This documentation provides clarity on how to implement custom validation for both individual fields and the entire form using the `@validate` property. It includes parameter descriptions and practical examples.
