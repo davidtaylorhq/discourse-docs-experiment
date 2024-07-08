@@ -32,8 +32,6 @@ The [Form](./form) component accepts a `@validate` property, allowing you to def
 
 **Parameters**
 
-- `name` (string): The name of the form field being validated.
-- `value` (string): The value of the form field being validated.
 - `data` (Object): The data object containing additional information for validation.
 - `handlers` (Object): An object containing handler functions.
   - `handlers.addError` (Function): A function to add an error if validation fails.
