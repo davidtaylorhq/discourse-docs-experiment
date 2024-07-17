@@ -64,9 +64,9 @@ await formKit().field("foo").fillIn("bar");
 
 ### toggle()
 
-Can be used on [`<field.Checkbox />`](/docs/guides/frontend/form-kit/controls/checkbox) or [`<field.Toggle />`](/docs/guides/frontend/form-kit/controls/toggle).
+Can be used on [`<field.Checkbox />`](/docs/guides/frontend/form-kit/controls/checkbox), [`<field.Toggle />`](/docs/guides/frontend/form-kit/controls/toggle) or [`<field.Password />`](/docs/guides/frontend/form-kit/controls/password)
 
-Will toggle the state of the control.
+Will toggle the state of the control. In the case of the password control it will actually toggle the visibility of the field.
 
 **Example**
 
