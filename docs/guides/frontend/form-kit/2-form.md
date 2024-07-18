@@ -62,6 +62,15 @@ Initial state of the data you give to the form.
 `@data` is treated as an immutable object, following Ember's DDAU pattern. This means when the user enters new data for any of the fields, it will not cause a mutation of `@data`! You can mutate your initial object using `@onSet`.
 :::
 
+When working with an object object we recommend to setup your form data object like this:
+
+```
+@cached
+get formData() {
+  return getProperties(this.model, "foo", "bar", "baz");
+}
+```
+
 **Parameter**
 
 - `data` (Object): The data object passed to the template.
