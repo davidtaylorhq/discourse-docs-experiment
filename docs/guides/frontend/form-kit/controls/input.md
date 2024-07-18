@@ -42,3 +42,31 @@ Optional property which will default to `text`. Maps to `<input>` types.
   </form.Field>
 </Form>
 ```
+
+## @before
+
+Renders text before the input
+
+**Examples**
+
+```hbs
+<Form as |form|>
+  <form.Field @name="email" @title="Email" @before="mailto:" as |field|>
+    <field.Input />
+  </form.Field>
+</Form>
+```
+
+## @after
+
+Renders text after the input
+
+**Examples**
+
+```hbs
+<Form as |form|>
+  <form.Field @name="email" @title="Email" @after=".com" as |field|>
+    <field.Input />
+  </form.Field>
+</Form>
+```
