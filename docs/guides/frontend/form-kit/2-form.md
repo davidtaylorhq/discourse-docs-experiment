@@ -97,6 +97,8 @@ Callback called when the form is inserted. It allows the developer to interact w
   - `callback.submit` (Function): Function to submit the form.
   - `callback.reset` (Function): Function to reset the form.
   - `callback.set` (Function): Function to set a key/value on the form data object.
+  - `callback.setProperties` (Function): Function to set an object on the form data object.
+  - `callback.isDirty` (boolean): Tracked property return the state of the form. It will be true once changes have been done on the form. Reseting the changes will bring it back to false.
 
 **Example**
 
