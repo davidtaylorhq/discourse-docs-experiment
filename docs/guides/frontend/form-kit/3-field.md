@@ -30,6 +30,16 @@ The subtitle is optional and will be shown under the title when set.
 <form.Field @subtitle="Bar" />
 ```
 
+## @description
+
+The description is optional and will be shown under the field when set.
+
+**Example**
+
+```hbs
+<form.Field @description="Bar" />
+```
+
 ## @showTitle
 
 By default, the title will be shown on top of the control. You can choose not to render it by setting this property to `false`.
