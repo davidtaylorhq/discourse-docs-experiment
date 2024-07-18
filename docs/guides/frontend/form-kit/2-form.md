@@ -15,6 +15,7 @@ The `Form` component yields a `form` object containing the following properties:
 - [Submit](./layout/submit)
 - [Field](./field)
 - [set](./helpers#set)
+- [setProperties](./helpers#setProperties)
 
 **Example**
 

@@ -17,11 +17,36 @@ Helpers are yielded by some blocks, like [Form](./form), or provided as paramete
 set("foo", 1);
 ```
 
-Using the set helper yielded by the form:
+Using the `set` helper yielded by the form:
 
 ```hbs
 <Form as |form|>
   <DButton @action={{fn form.set "foo" 1}} @translatedLabel="Set foo" />
+</Form>
+```
+
+## setProperties
+
+`setProperties` allows you to assign an object to the form's data.
+
+**Parameters**
+
+- `data` (object): A POJO where each key is going to be set on the form using its value.
+
+**Example**
+
+```javascript
+setProperties({ foo: 1, bar: 2 });
+```
+
+Using the `setProperties` helper yielded by the form:
+
+```hbs
+<Form as |form|>
+  <DButton
+    @action={{fn form.setProperties (hash foo=1 bar=2)}}
+    @translatedLabel="Set foo and bar"
+  />
 </Form>
 ```
 
