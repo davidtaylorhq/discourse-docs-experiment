@@ -58,6 +58,16 @@ Checks if the input value appears to be a properly formatted URL including the p
 <field.Input @name="endpoint" @validation="url" />
 ```
 
+### integer
+
+Checks if the input value is an integer.
+
+**Example**
+
+```hbs
+<field.Input @name="age" @validation="integer" />
+```
+
 ## Combining Rules
 
 Rules can be combined using the pipe operator: `|`.
