@@ -37,7 +37,9 @@ Creating a custom control is straightforward with the properties yielded by `for
 ```hbs
 <Form as |form|>
   <form.Field class="my-field" as |field|>
-    <MyCustomControl id={{field.id}} @onChange={{field.set}} />
+    <field.Custom>
+      <MyCustomControl id={{field.id}} @onChange={{field.set}} />
+    </field.Custom>
   </form.Field>
 </Form>
 ```
