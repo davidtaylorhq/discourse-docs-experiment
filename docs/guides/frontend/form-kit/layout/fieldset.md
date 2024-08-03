@@ -33,3 +33,15 @@ Displays a description for the fieldset.
   Foo
 </form.Fieldset>
 ```
+
+## @name
+
+Sets the name of the fieldset. This is necessary if you want to use the fieldset test helpers.
+
+**Example**
+
+```hbs
+<form.Fieldset @name="a-name">
+  Foo
+</form.Fieldset>
+```
