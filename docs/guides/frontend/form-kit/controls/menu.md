@@ -38,7 +38,7 @@ Renders a div which will have for content the yielded content.
         Bar
       </menu.Container>
       <menu.Item @action={{this.doSomething}}>Something</menu.Item>
-    </field.Menut>
+    </field.Menu>
   </form.Field>
 </Form>
 ```
