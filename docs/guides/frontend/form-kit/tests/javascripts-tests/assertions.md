@@ -151,3 +151,65 @@ Asserts that the `field` has a char counter.
 ```javascript
 assert.form().field("foo").hasCharCounter(2, 5, "it has updated the counter");
 ```
+
+## Fieldset
+
+The field element assertions are available at `assert.form(...).fieldset(...).*`.
+
+**Parameters**
+
+- `name` (string): The name of the fieldset.
+
+**Example**
+
+```javascript
+assert.form().fieldset("foo");
+```
+
+### hasTitle()
+
+Asserts that the `title` of the fieldset matches the `expected` value.
+
+**Parameters**
+
+- `expected` (anything): The expected value.
+- `message` (string) [optional]: The description of the test.
+
+**Example**
+
+```javascript
+assert.form().fieldset("foo").hasTitle("bar", "it has the correct title");
+```
+
+### hasDescription()
+
+Asserts that the `description` of the fieldset matches the `expected` value.
+
+**Parameters**
+
+- `expected` (anything): The expected value.
+- `message` (string) [optional]: The description of the test.
+
+**Example**
+
+```javascript
+assert
+  .form()
+  .fieldset("foo")
+  .hasDescription("bar", "it has the correct description");
+```
+
+### includesText()
+
+Asserts that the fieldset has yielded the `expected` value.
+
+**Parameters**
+
+- `expected` (anything): The expected value.
+- `message` (string) [optional]: The description of the test.
+
+**Example**
+
+```javascript
+assert.form().fieldset("foo").includesText("bar", "it has the correct text");
+```
